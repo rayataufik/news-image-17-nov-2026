@@ -1,163 +1,300 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<title>The World in One Day — 17 November 2026</title>
-<style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  html, body { width: 1024px; height: 1024px; }
-  body {
-    background: #f7f4ec;
-    color: #1a1a1a;
-    font-family: Georgia, 'Times New Roman', serif;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-  }
-  /* ---------- Masthead ---------- */
-  .masthead {
-    background: #161616;
-    color: #f7f4ec;
-    text-align: center;
-    padding: 26px 32px 22px;
-    flex: 0 0 auto;
-  }
-  .masthead .title {
-    font-size: 46px;
-    font-weight: bold;
-    letter-spacing: 6px;
-    line-height: 1.05;
-  }
-  .masthead .rule {
-    width: 120px;
-    height: 3px;
-    background: #d9a441;
-    margin: 12px auto;
-  }
-  .masthead .date {
-    font-size: 50px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    color: #f2c14e;
-    line-height: 1.05;
-  }
-  .masthead .subline {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 19px;
-    font-style: italic;
-    color: #cfc9bb;
-    margin-top: 10px;
-    letter-spacing: 1px;
-  }
-  /* ---------- Story grid ---------- */
-  .grid {
-    flex: 1 1 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 18px;
-    padding: 20px 24px;
-  }
-  .story {
-    background: #fffdf7;
-    border-top: 5px solid #333;
-    padding: 16px 20px 14px;
-    display: flex;
-    flex-direction: column;
-  }
-  .story .tag {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 13px;
-    font-weight: bold;
-    letter-spacing: 2.5px;
-    text-transform: uppercase;
-    margin-bottom: 8px;
-  }
-  .story h2 {
-    font-size: 28px;
-    line-height: 1.15;
-    font-weight: bold;
-    margin-bottom: 8px;
-  }
-  .story p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 17px;
-    line-height: 1.35;
-    color: #33302b;
-  }
-  .c-red    { border-top-color: #a83232; } .c-red .tag    { color: #a83232; }
-  .c-blue   { border-top-color: #2b5ea7; } .c-blue .tag   { color: #2b5ea7; }
-  .c-purple { border-top-color: #6a3fb5; } .c-purple .tag { color: #6a3fb5; }
-  .c-teal   { border-top-color: #0e7a6b; } .c-teal .tag   { color: #0e7a6b; }
-  .c-amber  { border-top-color: #b56a00; } .c-amber .tag  { color: #b56a00; }
-  .c-green  { border-top-color: #2e7d32; } .c-green .tag  { color: #2e7d32; }
-  /* ---------- Footer ---------- */
-  .footer {
-    flex: 0 0 auto;
-    background: #161616;
-    color: #f7f4ec;
-    padding: 14px 32px 16px;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  .footer .also {
-    font-size: 19px;
-    font-weight: bold;
-    letter-spacing: 0.5px;
-  }
-  .footer .also em { color: #f2c14e; font-style: normal; }
-  .footer .sources {
-    font-size: 13px;
-    color: #a9a294;
-    margin-top: 6px;
-    letter-spacing: 0.5px;
-  }
-</style>
-</head>
-<body>
-  <header class="masthead">
-    <div class="title">THE WORLD IN ONE DAY</div>
-    <div class="rule"></div>
-    <div class="date">TUESDAY, 17 NOVEMBER 2026</div>
-    <div class="subline">Six stories that defined the day</div>
-  </header>
+<html><head><meta charset="utf-8"><style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#dfe5e0}
+.page{width:1024px;height:1024px;background:#f2f5f2;padding:10px 14px 8px;display:flex;flex-direction:column;font-family:Arial,Helvetica,sans-serif;color:#16222e}
+.topbar{display:flex;justify-content:space-between;font-size:10px;font-weight:700;letter-spacing:1.6px;color:#0f2d4a;padding-bottom:4px}
+.mast{background:#0f2d4a;color:#fff;font-size:34px;font-weight:900;letter-spacing:.5px;padding:7px 12px;display:flex;justify-content:space-between;align-items:baseline}
+.mast .t2{color:#7fd1c0}
+.mast .ed{font-size:11px;font-weight:700;letter-spacing:2px;color:#a9c4bd}
+.date{font-size:60px;font-weight:900;line-height:1.02;letter-spacing:-1px;color:#0f2d4a;padding:4px 0 5px;border-bottom:3px solid #0f7a72}
+.lead{margin-top:7px}
+.art{width:100%;overflow:hidden}
+.art svg{display:block;width:100%;height:100%}
+.lead .art{height:92px}
+.tag{font-size:10px;font-weight:700;letter-spacing:.5px;color:#0f7a72;margin-top:4px}
+.tag .d{display:inline-block;width:9px;height:9px;background:#0f7a72;transform:rotate(45deg);margin-right:5px;vertical-align:0}
+.hl{font-weight:800;line-height:1.08;margin-top:2px;color:#0f2d4a}
+.sum{line-height:1.3;color:#2c3a46;margin-top:2px}
+.lead .hl{font-size:21px}
+.lead .sum{font-size:12px}
+.grid{display:flex;gap:10px;margin-top:7px}
+.cell{flex:1;min-width:0}
+.cell .art{height:42px}
+.cell .hl{font-size:13.5px}
+.cell .sum{font-size:10px}
+.band{display:flex;gap:10px;margin-top:7px;border-top:2px solid #0f2d4a;padding-top:5px}
+.band .cell .hl{font-size:13px}
+.band .cell .sum{font-size:10px}
+.bottom{display:flex;gap:12px;margin-top:8px;flex:1;min-height:0}
+.also{flex:1;min-width:0}
+.sect{background:#0f2d4a;color:#fff;font-size:11px;font-weight:700;letter-spacing:1.4px;padding:4px 8px;margin-bottom:5px}
+.also .cols{column-count:2;column-gap:14px}
+.grp{break-inside:avoid;margin-bottom:4px}
+.grp h4{font-size:9px;font-weight:800;letter-spacing:1.2px;color:#0f7a72;margin-bottom:1px}
+.grp .it{font-size:9px;line-height:1.25;margin-bottom:2px}
+.mapcol{width:296px;flex:none;background:#0f2d4a;color:#eaf2f0;padding:8px;display:flex;flex-direction:column}
+.mapcol h3{font-size:11px;font-weight:700;letter-spacing:1.4px;color:#fff;margin-bottom:5px}
+.mapcol svg{display:block;width:100%;height:160px}
+.mapcol .cap{font-size:8.5px;color:#a9c4bd;margin-top:4px}
+.stats{margin-top:7px;border-top:1px solid #2a4a63;padding-top:6px}
+.st{display:flex;gap:8px;align-items:baseline;margin-bottom:4px}
+.st .n{font-size:14px;font-weight:800;color:#7fd1c0;min-width:62px;flex:none}
+.st .l{font-size:9.5px;line-height:1.25;color:#eaf2f0}
+.mapcol .leg{font-size:8.5px;color:#cfe0da;margin-top:auto;line-height:1.5;padding-top:4px}
+.foot{border-top:1.5px solid #0f2d4a;margin-top:7px;padding-top:4px;display:flex;justify-content:space-between;font-family:Arial,Helvetica,sans-serif;font-size:9.5px;color:#44586a}
+</style></head><body><div class="page">
+<div class="topbar"><span>A NEWSPAPER THAT FITS ONE DAY ON ONE PAGE</span><span>43 STORIES &middot; SIX CONTINENTS</span></div>
+<div class="mast"><span>ONE DAY, <span class="t2">THE WHOLE WORLD</span></span><span class="ed">TUESDAY EDITION</span></div>
+<div class="date">Tuesday 17 November 2026</div>
 
-  <main class="grid">
-    <article class="story c-red">
-      <div class="tag">Middle East</div>
-      <h2>U.S. strikes Iran after Hormuz tanker attacks</h2>
-      <p>U.S. warplanes hit missile sites on Qeshm Island after attacks on tankers in the Strait of Hormuz; Trump weighs unverified reports of a &lsquo;dirty bomb&rsquo; plot.</p>
-    </article>
-    <article class="story c-blue">
-      <div class="tag">Europe</div>
-      <h2>Ukraine hits Kerch Bridge; span collapses</h2>
-      <p>Drones and missiles strike the bridge to Crimea and a road section falls into the water. Russia hits Kyiv bridges in reply.</p>
-    </article>
-    <article class="story c-purple">
-      <div class="tag">Tech</div>
-      <h2>Outages cascade: banks, flights, Apple, NSA</h2>
-      <p>A JPMorgan bug ripples through U.S. banks and Zelle; United flights are hit; Apple and the NSA&rsquo;s classified network go dark. Officials say no cyberattack.</p>
-    </article>
-    <article class="story c-teal">
-      <div class="tag">Business</div>
-      <h2>NVIDIA board won&rsquo;t bring back Huang</h2>
-      <p>Ex-CEO Jensen Huang, out over an affair with a suspected Chinese spy, offers to return. The board says no.</p>
-    </article>
-    <article class="story c-amber">
-      <div class="tag">Diplomacy</div>
-      <h2>Trump in Asia for Xi&ndash;Putin summit</h2>
-      <p>The president arrives in Manila for ASEAN, then a trilateral summit with Xi Jinping and Vladimir Putin in China.</p>
-    </article>
-    <article class="story c-green">
-      <div class="tag">Health</div>
-      <h2>U.S. loses measles elimination status</h2>
-      <p>The first time since 2000, health officials blame falling vaccination rates.</p>
-    </article>
-  </main>
+<div class="lead">
+<div class="art"><svg viewBox="0 0 996 92">
+<rect width="996" height="92" fill="#d7e6ea"/>
+<rect y="48" width="996" height="44" fill="#174a68"/>
+<path d="M0 58 Q60 54 120 58 T240 58 T360 58 T480 58 T600 58 T720 58 T840 58 T996 58" stroke="#7fb0c8" stroke-width="2" fill="none"/>
+<path d="M0 72 Q60 68 120 72 T240 72 T360 72 T480 72 T600 72 T720 72 T840 72 T996 72" stroke="#7fb0c8" stroke-width="1.5" fill="none"/>
+<rect x="0" y="38" width="430" height="9" fill="#2e2e2e"/>
+<rect x="566" y="38" width="430" height="9" fill="#2e2e2e"/>
+<rect x="30" y="47" width="7" height="14" fill="#222"/><rect x="200" y="47" width="7" height="14" fill="#222"/><rect x="380" y="47" width="7" height="14" fill="#222"/>
+<rect x="610" y="47" width="7" height="14" fill="#222"/><rect x="780" y="47" width="7" height="14" fill="#222"/><rect x="940" y="47" width="7" height="14" fill="#222"/>
+<polygon points="432,38 560,44 552,66 446,60" fill="#3a3a3a"/>
+<polygon points="470,64 510,62 516,74 476,78" fill="#555"/>
+<path d="M540 68 q12 -4 24 0 M470 80 q10 -4 20 0" stroke="#cfe3ee" stroke-width="1.5" fill="none"/>
+<circle cx="498" cy="24" r="12" fill="#9a9a9a"/><circle cx="512" cy="14" r="9" fill="#b0b0b0"/><circle cx="486" cy="16" r="8" fill="#a8a8a8"/>
+<rect y="80" width="996" height="12" fill="#0f2d4a"/><text x="498" y="89" font-family="Arial" font-size="8.5" font-weight="700" fill="#fff" text-anchor="middle">THE KERCH STRAIT &mdash; SECOND STRIKE IN TWO DAYS</text>
+</svg></div>
+<div class="tag"><span class="d"></span>1 &middot; UKRAINE WAR &mdash; EUROPE</div>
+<div class="hl">Crimean Bridge span falls into the sea after a second strike</div>
+<div class="sum">A second hit in two days; Zelensky calls it an &ldquo;unprecedented operation&rdquo;. The Kremlin vows to rebuild the crossing.</div>
+</div>
 
-  <footer class="footer">
-    <div class="also">Also: <em>Robert Pattinson is the next James Bond</em></div>
-    <div class="sources">Sources: Reuters, AP, NPR, CNN &mdash; 17 Nov 2026</div>
-  </footer>
-</body>
-</html>
+<div class="grid">
+<div class="cell">
+<div class="art"><svg viewBox="0 0 240 42">
+<rect width="240" height="42" fill="#dcead9"/>
+<path d="M20 8 Q120 2 220 10 L215 36 Q120 42 25 34 Z" fill="#7fb3c8"/>
+<circle cx="150" cy="18" r="4" fill="#c0392b"/><circle cx="186" cy="26" r="4" fill="#1f5fa8"/>
+<path d="M150 18 L186 26" stroke="#c0392b" stroke-width="1.5" stroke-dasharray="3 2"/>
+<text x="150" y="33" font-family="Arial" font-size="7" fill="#333" text-anchor="middle">BAHRAIN</text>
+<text x="198" y="38" font-family="Arial" font-size="7" fill="#333">QESHM</text>
+</svg></div>
+<div class="tag"><span class="d"></span>2 &middot; IRAN WAR &mdash; MIDDLE EAST</div>
+<div class="hl">Iran drones target a US radar in Bahrain; America strikes back</div>
+<div class="sum">All drones downed, say Bahrain and the US; US jets then hit Qeshm. Tehran says tankers struck mines.</div>
+</div>
+<div class="cell">
+<div class="art"><svg viewBox="0 0 240 42">
+<rect width="240" height="42" fill="#efe9dc"/>
+<g font-family="Arial" font-size="8" font-weight="700" text-anchor="middle">
+<rect x="12" y="5" width="48" height="24" fill="#fff" stroke="#999"/><rect x="12" y="5" width="48" height="4" fill="#b22234"/><rect x="12" y="14" width="48" height="4" fill="#b22234"/><rect x="12" y="23" width="48" height="4" fill="#b22234"/><rect x="12" y="5" width="20" height="13" fill="#3c3b6e"/><text x="36" y="39" fill="#333">USA</text>
+<rect x="68" y="5" width="48" height="24" fill="#ff9933"/><rect x="68" y="14" width="48" height="8" fill="#fff"/><rect x="68" y="22" width="48" height="7" fill="#138808"/><text x="92" y="39" fill="#333">INDIA</text>
+<rect x="124" y="5" width="48" height="24" fill="#fff" stroke="#999"/><circle cx="148" cy="17" r="7" fill="#bc002d"/><text x="148" y="39" fill="#333">JAPAN</text>
+<rect x="180" y="5" width="48" height="24" fill="#00247d"/><circle cx="204" cy="17" r="5" fill="#fff"/><text x="204" y="39" fill="#333">AUSTRALIA</text>
+</g>
+</svg></div>
+<div class="tag"><span class="d"></span>3 &middot; DIPLOMACY &mdash; ASIA</div>
+<div class="hl">Trump gathers the Quad in Manila for the first time</div>
+<div class="sum">The four leaders unveil critical-minerals deals as Putin arrives in Shenzhen for Thursday&rsquo;s talks.</div>
+</div>
+<div class="cell">
+<div class="art"><svg viewBox="0 0 240 42">
+<rect width="240" height="42" fill="#e6f0e6"/>
+<rect x="14" y="7" width="52" height="28" fill="#fff" stroke="#999"/>
+<rect x="36" y="13" width="8" height="16" fill="#c0392b"/><rect x="31" y="18" width="18" height="7" fill="#c0392b"/>
+<path d="M80 34 L110 26 L140 28 L170 13 L200 9" stroke="#c0392b" stroke-width="2" fill="none"/>
+<circle cx="200" cy="9" r="3" fill="#c0392b"/>
+<text x="208" y="13" font-family="Arial" font-size="8" font-weight="700" fill="#c0392b">11,000+</text>
+</svg></div>
+<div class="tag"><span class="d"></span>4 &middot; HEALTH &mdash; AFRICA</div>
+<div class="hl">Ebola in DR Congo passes 11,000 cases, WHO says</div>
+<div class="sum">Infections more than doubled in three months; about 5,400 people have died.</div>
+</div>
+<div class="cell">
+<div class="art"><svg viewBox="0 0 240 42">
+<rect width="240" height="42" fill="#e3eeea"/>
+<circle cx="42" cy="21" r="16" fill="#2a9d8f"/>
+<path d="M30 21 Q42 13 54 21 Q42 29 30 21" fill="#7fd1c0"/>
+<path d="M42 5 L42 37 M26 13 Q42 21 58 13 M26 29 Q42 23 58 29" stroke="#0f2d4a" stroke-width="1" fill="none"/>
+<text x="70" y="18" font-family="Arial" font-size="12" font-weight="700" fill="#0f2d4a">COP31</text>
+<text x="70" y="32" font-family="Arial" font-size="8" fill="#333">ANTALYA &middot; ENDS FRIDAY</text>
+</svg></div>
+<div class="tag"><span class="d"></span>5 &middot; CLIMATE &mdash; GLOBAL</div>
+<div class="hl">COP31 split over a fossil-fuel phase-out</div>
+<div class="sum">Delegates weigh the first draft in Antalya; the talks close on Friday.</div>
+</div>
+</div>
+
+<div class="grid">
+<div class="cell">
+<div class="art"><svg viewBox="0 0 240 42">
+<rect width="240" height="42" fill="#fdeceb"/>
+<rect x="12" y="5" width="48" height="24" fill="#fff" stroke="#999"/><rect x="12" y="5" width="48" height="4" fill="#b22234"/><rect x="12" y="14" width="48" height="4" fill="#b22234"/><rect x="12" y="23" width="48" height="4" fill="#b22234"/><rect x="12" y="5" width="20" height="13" fill="#3c3b6e"/><text x="36" y="39" font-family="Arial" font-size="8" font-weight="700" text-anchor="middle" fill="#333">USA</text>
+<rect x="68" y="5" width="48" height="24" fill="#fff" stroke="#999"/><rect x="68" y="5" width="16" height="24" fill="#006847"/><rect x="100" y="5" width="16" height="24" fill="#ce1126"/><text x="92" y="39" font-family="Arial" font-size="8" font-weight="700" text-anchor="middle" fill="#333">MEXICO</text>
+<rect x="124" y="5" width="48" height="24" fill="#fcd116"/><rect x="124" y="5" width="48" height="8" fill="#d52b1e"/><rect x="124" y="29" width="48" height="6" fill="#007934"/><text x="148" y="39" font-family="Arial" font-size="8" font-weight="700" text-anchor="middle" fill="#333">BOLIVIA</text>
+<text x="182" y="19" font-family="Arial" font-size="9" font-weight="700" fill="#c0392b">STATUS</text>
+<text x="182" y="31" font-family="Arial" font-size="9" font-weight="700" fill="#c0392b">LOST</text>
+</svg></div>
+<div class="tag"><span class="d"></span>6 &middot; HEALTH &mdash; AMERICAS</div>
+<div class="hl">Three countries lose their measles-free status</div>
+<div class="sum">PAHO cites a year of spread; the US alone has counted 5,700+ cases in 2026.</div>
+</div>
+<div class="cell">
+<div class="art"><svg viewBox="0 0 240 42">
+<rect width="240" height="42" fill="#101418"/>
+<rect x="18" y="24" width="15" height="11" fill="#76b900"/><rect x="41" y="18" width="15" height="17" fill="#76b900"/><rect x="64" y="22" width="15" height="13" fill="#76b900"/><rect x="87" y="11" width="15" height="24" fill="#76b900"/><rect x="110" y="7" width="15" height="28" fill="#76b900"/>
+<text x="134" y="20" font-family="Arial" font-size="13" font-weight="700" fill="#76b900">$115.8BN</text>
+<text x="134" y="34" font-family="Arial" font-size="8" fill="#e74c3c">DOW &minus;849</text>
+</svg></div>
+<div class="tag"><span class="d"></span>7 &middot; BUSINESS &mdash; US</div>
+<div class="hl">Nvidia&rsquo;s sales double to $115.8bn in a quarter</div>
+<div class="sum">Results landed after the close; the Dow had earlier fallen 849 points, down 1.6%.</div>
+</div>
+<div class="cell">
+<div class="art"><svg viewBox="0 0 240 42">
+<rect width="240" height="42" fill="#efe8dc"/>
+<polygon points="20,36 52,9 84,36" fill="#fff" stroke="#999"/><polygon points="52,9 84,36 68,36 52,21" fill="#e0d6c2"/>
+<polygon points="96,36 128,9 160,36" fill="#fff" stroke="#999"/>
+<rect x="176" y="16" width="44" height="20" fill="#b98a2f"/><text x="198" y="29" font-family="Arial" font-size="8" font-weight="700" fill="#fff" text-anchor="middle">AID</text>
+</svg></div>
+<div class="tag"><span class="d"></span>8 &middot; GAZA &mdash; MIDDLE EAST</div>
+<div class="hl">Gaza truce close to collapse, the UN hears</div>
+<div class="sum">A Board of Peace report warns the deal is fraying; UN agencies say 1.4 million face acute hunger.</div>
+</div>
+<div class="cell">
+<div class="art"><svg viewBox="0 0 240 42">
+<rect width="240" height="42" fill="#e8e4da"/>
+<rect x="30" y="24" width="180" height="11" fill="#5b4636"/>
+<rect x="40" y="11" width="160" height="13" fill="#6b5636"/>
+<rect x="52" y="15" width="6" height="9" fill="#f2f5f2"/><rect x="72" y="15" width="6" height="9" fill="#f2f5f2"/><rect x="92" y="15" width="6" height="9" fill="#f2f5f2"/><rect x="112" y="15" width="6" height="9" fill="#f2f5f2"/><rect x="132" y="15" width="6" height="9" fill="#f2f5f2"/><rect x="152" y="15" width="6" height="9" fill="#f2f5f2"/><rect x="172" y="15" width="6" height="9" fill="#f2f5f2"/>
+<polygon points="100,11 140,11 120,2" fill="#5b4636"/>
+</svg></div>
+<div class="tag"><span class="d"></span>9 &middot; POLITICS &mdash; ASIA</div>
+<div class="hl">Mongolia&rsquo;s president says he will quit</div>
+<div class="sum">Khurelsukh denies a $25m bribe claim tied to a railway project; parliament must accept his resignation.</div>
+</div>
+</div>
+
+<div class="band">
+<div class="cell">
+<div class="tag"><span class="d"></span>10 &middot; POLITICS &mdash; EUROPE</div>
+<div class="hl">Serbia&rsquo;s student MPs take their seats</div>
+<div class="sum">The Student List holds 140 of 250 seats; Vucic&rsquo;s party moves into opposition.</div>
+</div>
+<div class="cell">
+<div class="tag"><span class="d"></span>11 &middot; LABOUR &mdash; ASIA</div>
+<div class="hl">Bangladesh police fire tear gas at garment workers</div>
+<div class="sum">Workers demand Tk 30,000 a month, up from 12,500; 37 factories have shut.</div>
+</div>
+<div class="cell">
+<div class="tag"><span class="d"></span>12 &middot; AIR CRASH &mdash; RUSSIA</div>
+<div class="hl">Russian military plane crashes in Siberia; all 19 dead</div>
+<div class="sum">The An-12 came down near Kemerovo; investigators suspect a fault.</div>
+</div>
+<div class="cell">
+<div class="tag"><span class="d"></span>13 &middot; JUSTICE &mdash; AFRICA</div>
+<div class="hl">Mozambique tries its opposition leader</div>
+<div class="sum">Venancio Mondlane faces five charges over the deadly 2024 protests.</div>
+</div>
+</div>
+
+<div class="bottom">
+<div class="also">
+<div class="sect">MORE FROM TUESDAY 17 NOVEMBER</div>
+<div class="cols">
+<div class="grp"><h4>EUROPE</h4>
+<div class="it"><b>Russia:</b> record 1,441 drones downed overnight</div>
+<div class="it"><b>Kyiv:</b> missiles hit the North and South Dnipro bridges</div>
+<div class="it"><b>UN:</b> Ukraine&rsquo;s civilian deaths this year top all of 2025</div>
+<div class="it"><b>Prague:</b> two trains collide; 46 people injured</div>
+<div class="it"><b>France:</b> public-sector strike; 146,000 march (CGT: 500,000)</div>
+<div class="it"><b>Poland:</b> Tusk&rsquo;s government survives a no-confidence vote</div>
+<div class="it"><b>Germany:</b> Deutsche Bank shares fall after a huge data leak</div>
+<div class="it"><b>Moldova:</b> shuts its airspace as a drone nears Chisinau</div>
+<div class="it"><b>Turkey:</b> police seize opposition broadcaster Sozcu TV</div>
+<div class="it"><b>Vatican:</b> Pope Leo XIV returns from his South America tour</div>
+<div class="it"><b>UK:</b> sanctions 8 settlement firms and Tzav 9</div>
+</div>
+<div class="grp"><h4>MIDDLE EAST</h4>
+<div class="it"><b>Israel:</b> Eisenkot ally Matan Kahana elected speaker, 66&ndash;52</div>
+<div class="it"><b>West Bank:</b> settlers kill a woman, 72, near Jericho</div>
+<div class="it"><b>Oman:</b> Iran&rsquo;s Araghchi holds shipping-safety talks</div>
+</div>
+<div class="grp"><h4>ASIA</h4>
+<div class="it"><b>India:</b> Cyclone Akvan strengthens; Odisha evacuates</div>
+<div class="it"><b>India:</b> bus falls into an Uttarakhand gorge, 8 dead</div>
+<div class="it"><b>Japan:</b> protests a Russian airspace intrusion near Fukuoka</div>
+<div class="it"><b>China&ndash;Canada:</b> more tariff cuts after Carney&ndash;Xi talks</div>
+<div class="it"><b>Malaysia:</b> Macron visit seals a strategic partnership</div>
+<div class="it"><b>Thailand:</b> pledges to scrap tariffs on US goods</div>
+<div class="it"><b>South Korea:</b> IMF lifts 2026 growth forecast to 3.9%</div>
+</div>
+<div class="grp"><h4>AMERICAS</h4>
+<div class="it"><b>Haiti:</b> Aristide&rsquo;s party will field no candidates</div>
+<div class="it"><b>US Senate:</b> Van Hollen challenges Schumer for leader</div>
+</div>
+<div class="grp"><h4>AFRICA</h4>
+<div class="it"><b>Kenya:</b> WFP aids 30,000 who fled Ethiopia clashes</div>
+</div>
+<div class="grp"><h4>OCEANIA</h4>
+<div class="it"><b>Australia:</b> eases planned backpacker visa curbs</div>
+<div class="it"><b>Darwin:</b> M6.6 quake off Indonesia felt; no tsunami</div>
+</div>
+<div class="grp"><h4>SPORT &amp; TECH</h4>
+<div class="it"><b>Football:</b> Norway win 3&ndash;2 in Denmark; Haaland scores twice</div>
+<div class="it"><b>Football:</b> India beat Pakistan 2&ndash;1 in SAFF final</div>
+<div class="it"><b>Football:</b> Togo beat Algeria 3&ndash;0 in AFCON qualifier</div>
+<div class="it"><b>Apple:</b> Pay, iCloud and App Store outage; not a hack</div>
+</div>
+</div>
+</div>
+
+<div class="mapcol">
+<h3>WHERE IT HAPPENED</h3>
+<svg viewBox="0 0 296 190">
+<rect width="296" height="190" fill="#0f2d4a"/>
+<g fill="#2a9d8f">
+<path d="M8 32 L28 18 L66 18 L88 32 L82 50 L62 64 L42 68 L24 56 L10 44 Z"/>
+<path d="M78 8 L94 10 L90 22 L78 20 Z"/>
+<path d="M52 78 L70 74 L82 90 L76 118 L64 140 L54 116 L48 94 Z"/>
+<path d="M140 28 L158 20 L174 28 L168 42 L150 48 L140 40 Z"/>
+<path d="M140 62 L164 56 L178 70 L172 96 L168 130 L160 150 L150 128 L142 82 Z"/>
+<path d="M176 56 L190 58 L192 74 L182 82 L174 70 Z"/>
+<path d="M176 24 L228 14 L268 26 L288 46 L272 66 L242 72 L220 58 L200 42 L180 34 Z"/>
+<path d="M232 88 L248 84 L256 96 L240 102 Z"/>
+<path d="M240 128 L268 122 L280 136 L262 150 L242 142 Z"/>
+<path d="M138 30 L144 28 L146 36 L140 38 Z"/>
+<path d="M258 48 L266 44 L268 56 L260 60 Z"/>
+<path d="M282 158 L288 156 L288 166 L282 166 Z"/>
+</g>
+<g fill="#ffffff">
+<circle cx="144" cy="34" r="2"/><circle cx="140" cy="46" r="2"/><circle cx="160" cy="34" r="2"/><circle cx="166" cy="42" r="2"/><circle cx="138" cy="34" r="2"/><circle cx="144" cy="54" r="2"/><circle cx="166" cy="38" r="2"/><circle cx="180" cy="26" r="2"/><circle cx="258" cy="50" r="2"/><circle cx="238" cy="46" r="2"/><circle cx="232" cy="90" r="2"/><circle cx="228" cy="82" r="2"/><circle cx="250" cy="46" r="2"/><circle cx="168" cy="106" r="2"/><circle cx="60" cy="64" r="2"/><circle cx="62" cy="48" r="2"/><circle cx="272" cy="140" r="2"/><circle cx="258" cy="126" r="2"/><circle cx="238" cy="100" r="2"/>
+</g>
+<g font-family="Arial" font-size="7" font-weight="700" text-anchor="middle">
+<polygon points="176,30 182,36 176,42 170,36" fill="#fff"/><text x="176" y="38.5" fill="#0f2d4a">1</text>
+<polygon points="190,68 196,74 190,80 184,74" fill="#fff"/><text x="190" y="76.5" fill="#0f2d4a">2</text>
+<polygon points="239,82 245,88 239,94 233,88" fill="#fff"/><text x="239" y="90.5" fill="#0f2d4a">3</text>
+<polygon points="158,89 164,95 158,101 152,95" fill="#fff"/><text x="158" y="97.5" fill="#0f2d4a">4</text>
+<polygon points="164,48 170,54 164,60 158,54" fill="#fff"/><text x="164" y="56.5" fill="#0f2d4a">5</text>
+<polygon points="58,47 64,53 58,59 52,53" fill="#fff"/><text x="58" y="55.5" fill="#0f2d4a">6</text>
+<polygon points="76,56 82,62 76,68 70,62" fill="#fff"/><text x="76" y="64.5" fill="#0f2d4a">7</text>
+<polygon points="174,60 180,66 174,72 168,66" fill="#fff"/><text x="174" y="68.5" fill="#0f2d4a">8</text>
+<polygon points="228,34 234,40 228,46 222,40" fill="#fff"/><text x="228" y="42.5" fill="#0f2d4a">9</text>
+<polygon points="148,36 154,42 148,48 142,42" fill="#fff"/><text x="148" y="44.5" fill="#0f2d4a">10</text>
+<polygon points="216,58 222,64 216,70 210,64" fill="#fff"/><text x="216" y="66.5" fill="#0f2d4a">11</text>
+<polygon points="211,23 217,29 211,35 205,29" fill="#fff"/><text x="211" y="31.5" fill="#0f2d4a">12</text>
+<polygon points="165,136 171,142 165,148 159,142" fill="#fff"/><text x="165" y="144.5" fill="#0f2d4a">13</text>
+</g>
+</svg>
+<div class="cap">Diamonds: stories 1&ndash;13 &middot; Dots: the rest</div>
+<div class="stats">
+<div class="st"><span class="n">1,441</span><span class="l">drones downed overnight</span></div>
+<div class="st"><span class="n">11,000+</span><span class="l">Ebola cases in DR Congo</span></div>
+<div class="st"><span class="n">5,700+</span><span class="l">US measles cases in 2026</span></div>
+</div>
+<div class="leg">Americas &middot; Europe &middot; Middle East &middot; Asia &middot; Africa &middot; Oceania &middot; Global &amp; space</div>
+</div>
+</div>
+
+<div class="foot"><span>All 43 stories below happened on, or were first reported on, Tuesday 17 November 2026. Claims that are contested are labelled as claims.</span><span>Reporting: Reuters, AP, AFP, BBC, Al Jazeera, WHO, UN. Drawings original.</span></div>
+</div></body></html>
