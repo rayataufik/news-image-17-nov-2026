@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The World in One Day — 17 November 2026</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1024px; height: 1024px; }
+  body {
+    background: #f7f4ec;
+    color: #1a1a1a;
+    font-family: Georgia, 'Times New Roman', serif;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  /* ---------- Masthead ---------- */
+  .masthead {
+    background: #161616;
+    color: #f7f4ec;
+    text-align: center;
+    padding: 26px 32px 22px;
+    flex: 0 0 auto;
+  }
+  .masthead .title {
+    font-size: 46px;
+    font-weight: bold;
+    letter-spacing: 6px;
+    line-height: 1.05;
+  }
+  .masthead .rule {
+    width: 120px;
+    height: 3px;
+    background: #d9a441;
+    margin: 12px auto;
+  }
+  .masthead .date {
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #f2c14e;
+    line-height: 1.05;
+  }
+  .masthead .subline {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    font-style: italic;
+    color: #cfc9bb;
+    margin-top: 10px;
+    letter-spacing: 1px;
+  }
+  /* ---------- Story grid ---------- */
+  .grid {
+    flex: 1 1 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 18px;
+    padding: 20px 24px;
+  }
+  .story {
+    background: #fffdf7;
+    border-top: 5px solid #333;
+    padding: 16px 20px 14px;
+    display: flex;
+    flex-direction: column;
+  }
+  .story .tag {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  .story h2 {
+    font-size: 28px;
+    line-height: 1.15;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  .story p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    line-height: 1.35;
+    color: #33302b;
+  }
+  .c-red    { border-top-color: #a83232; } .c-red .tag    { color: #a83232; }
+  .c-blue   { border-top-color: #2b5ea7; } .c-blue .tag   { color: #2b5ea7; }
+  .c-purple { border-top-color: #6a3fb5; } .c-purple .tag { color: #6a3fb5; }
+  .c-teal   { border-top-color: #0e7a6b; } .c-teal .tag   { color: #0e7a6b; }
+  .c-amber  { border-top-color: #b56a00; } .c-amber .tag  { color: #b56a00; }
+  .c-green  { border-top-color: #2e7d32; } .c-green .tag  { color: #2e7d32; }
+  /* ---------- Footer ---------- */
+  .footer {
+    flex: 0 0 auto;
+    background: #161616;
+    color: #f7f4ec;
+    padding: 14px 32px 16px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .footer .also {
+    font-size: 19px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+  }
+  .footer .also em { color: #f2c14e; font-style: normal; }
+  .footer .sources {
+    font-size: 13px;
+    color: #a9a294;
+    margin-top: 6px;
+    letter-spacing: 0.5px;
+  }
+</style>
+</head>
+<body>
+  <header class="masthead">
+    <div class="title">THE WORLD IN ONE DAY</div>
+    <div class="rule"></div>
+    <div class="date">TUESDAY, 17 NOVEMBER 2026</div>
+    <div class="subline">Six stories that defined the day</div>
+  </header>
+
+  <main class="grid">
+    <article class="story c-red">
+      <div class="tag">Middle East</div>
+      <h2>U.S. strikes Iran after Hormuz tanker attacks</h2>
+      <p>U.S. warplanes hit missile sites on Qeshm Island after attacks on tankers in the Strait of Hormuz; Trump weighs unverified reports of a &lsquo;dirty bomb&rsquo; plot.</p>
+    </article>
+    <article class="story c-blue">
+      <div class="tag">Europe</div>
+      <h2>Ukraine hits Kerch Bridge; span collapses</h2>
+      <p>Drones and missiles strike the bridge to Crimea and a road section falls into the water. Russia hits Kyiv bridges in reply.</p>
+    </article>
+    <article class="story c-purple">
+      <div class="tag">Tech</div>
+      <h2>Outages cascade: banks, flights, Apple, NSA</h2>
+      <p>A JPMorgan bug ripples through U.S. banks and Zelle; United flights are hit; Apple and the NSA&rsquo;s classified network go dark. Officials say no cyberattack.</p>
+    </article>
+    <article class="story c-teal">
+      <div class="tag">Business</div>
+      <h2>NVIDIA board won&rsquo;t bring back Huang</h2>
+      <p>Ex-CEO Jensen Huang, out over an affair with a suspected Chinese spy, offers to return. The board says no.</p>
+    </article>
+    <article class="story c-amber">
+      <div class="tag">Diplomacy</div>
+      <h2>Trump in Asia for Xi&ndash;Putin summit</h2>
+      <p>The president arrives in Manila for ASEAN, then a trilateral summit with Xi Jinping and Vladimir Putin in China.</p>
+    </article>
+    <article class="story c-green">
+      <div class="tag">Health</div>
+      <h2>U.S. loses measles elimination status</h2>
+      <p>The first time since 2000, health officials blame falling vaccination rates.</p>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="also">Also: <em>Robert Pattinson is the next James Bond</em></div>
+    <div class="sources">Sources: Reuters, AP, NPR, CNN &mdash; 17 Nov 2026</div>
+  </footer>
+</body>
+</html>
